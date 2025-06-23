@@ -152,4 +152,4 @@ with gr.Blocks(title="LatentSync demo") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(inbrowser=True, share=False)
+    demo.launch(inbrowser=True, share=True)
