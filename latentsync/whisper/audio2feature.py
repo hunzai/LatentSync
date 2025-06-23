@@ -16,7 +16,7 @@ class Audio2Feature:
         num_frames=16,
         audio_feat_length=[2, 2],
     ):
-        self.model = load_model(model_path, device="cpu")
+        self.model = load_model(model_path, device)
         self.audio_embeds_cache_dir = audio_embeds_cache_dir
         if audio_embeds_cache_dir is not None and audio_embeds_cache_dir != "":
             Path(audio_embeds_cache_dir).mkdir(parents=True, exist_ok=True)
